@@ -18,7 +18,7 @@ def generator_frames():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('video.html')
 
 
 @app.route('/video_feed')
