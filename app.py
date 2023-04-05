@@ -2,7 +2,7 @@ from flask import Flask, render_template, Response
 import cv2
 
 app = Flask(__name__)
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture("http://192.168.88.55:8080/video")
 
 
 def generator_frames():  
@@ -26,4 +26,4 @@ def video_feed():
     return Response(generator_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0")

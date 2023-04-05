@@ -1,18 +1,23 @@
+body{
+  width: 100%;
+  background-color: red;
+}
+
 .img1 {
-    position: fixed;
+    /*position: fixed;*/
+    float:left;
     top: 0;
     left: 0;
     width: 50%;
     height: 100%;
     object-fit: cover;
   }
-
 .img2{
-    position: fixed;
+    /*position: fixed;*/
+    float: left;
     top: 0;
     right: 0;
     width: 50%;
     height: 100%;
     object-fit: cover;
   }
-
